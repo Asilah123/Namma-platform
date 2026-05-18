@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#071B34">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/txtHeaderTrainName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Train Name"
+            android:textColor="#F7C52B"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#11284B"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/platform_circle"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPlatform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="#F7C52B"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtArrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival: 06:00"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDeparture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure: 06:15"
+                    android:textColor="#D7D7D7"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:id="@+id/txtTrain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Express"
+                    android:textColor="#6EC6FF"
+                    android:textSize="14sp"
+                    android:background="#1E4F8A"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coach Layout"
+            android:textColor="#F7C52B"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap a coach to see where to stand"
+            android:textColor="#B0B0B0"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/coachContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍"
+            android:textSize="34sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btnStand"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Stand Here"
+            android:textColor="#FF4B8B"
+            android:textSize="20sp"
+            android:background="@drawable/stand_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#132C52"
+            android:padding="20dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/txtCoach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a Coach"
+                android:textColor="#FF4B8B"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: 10 / 11"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rear of platform"
+                android:textColor="#CFCFCF"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSpeak"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🔊 Listen"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#F7C52B"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</ScrollView>

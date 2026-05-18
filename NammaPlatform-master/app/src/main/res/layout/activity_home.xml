@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#071B34"
+    android:padding="24dp">
+
+    <!-- TRAIN SYMBOL -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚆"
+        android:textSize="80sp" />
+
+    <!-- APP NAME -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Namma Platform"
+        android:textColor="#F7C52B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <!-- SUBTITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Know exactly where to stand before your train arrives"
+        android:textColor="#D6D6D6"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+    <!-- START BUTTON -->
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:text="Get Started"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#F7C52B"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
